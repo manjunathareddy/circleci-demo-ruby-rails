@@ -55,6 +55,10 @@ class PostsController < ApplicationController
     @last_post = Post.last
   end
   
+  def get_first_post
+    @first_post = Post.first
+  end
+  
 
   # DELETE /posts/1
   # DELETE /posts/1.json
